@@ -49,7 +49,7 @@
       </TextField>
       <HBox alignment="CENTER" prefHeight="38.0" prefWidth="600.0">
          <children>
-            <Button fx:id="btnDownload" mnemonicParsing="false" onAction="#launchDownload" prefHeight="25.0" prefWidth="137.0" text="Download">
+            <Button fx:id="btnDownload" mnemonicParsing="false" prefHeight="25.0" prefWidth="137.0" text="Download">
                <HBox.margin>
                   <Insets bottom="10.0" left="10.0" right="10.0" />
                </HBox.margin>
