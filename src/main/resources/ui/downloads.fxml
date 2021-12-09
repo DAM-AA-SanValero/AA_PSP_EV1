@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="230.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label text="Enlace del archivo:">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" />
+         </VBox.margin>
+      </Label>
+      <TextField fx:id="txtLink" promptText="Link de descarga" />
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="btnStart" mnemonicParsing="false" onAction="#startDownload" text="Start">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnStop" mnemonicParsing="false" onAction="#stopDownload" text="Stop" />
+         </children>
+      </HBox>
+      <ProgressBar fx:id="progressBar" prefHeight="32.0" prefWidth="557.0" progress="0.0">
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </ProgressBar>
+      <Label fx:id="labelPercent" alignment="BOTTOM_RIGHT" contentDisplay="RIGHT" text="0%" textAlignment="RIGHT">
+         <VBox.margin>
+            <Insets left="5.0" top="10.0" />
+         </VBox.margin>
+      </Label>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
