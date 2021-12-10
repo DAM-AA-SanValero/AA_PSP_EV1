@@ -4,6 +4,7 @@ import com.svalero.aplicacionmultihilo.util.R;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
@@ -14,7 +15,7 @@ public class App extends Application {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(R.getURL("downloader.fxml"));
         loader.setController(new AppController());
-        VBox vBox = loader.load();
+        ScrollPane vBox = loader.load();
 
         Scene scene = new Scene(vBox);
         stage.setScene(scene);
