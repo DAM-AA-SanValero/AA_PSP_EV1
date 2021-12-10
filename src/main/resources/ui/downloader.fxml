@@ -61,7 +61,7 @@
                   <Insets top="15.0" />
                </VBox.margin>
             </HBox>
-            <TabPane fx:id="tpDownloads" prefHeight="279.0" prefWidth="559.0" tabClosingPolicy="UNAVAILABLE" />
+            <TabPane fx:id="tpDownloads" prefHeight="279.0" prefWidth="559.0" />
          </children>
          <padding>
             <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
